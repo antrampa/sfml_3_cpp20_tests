@@ -2,3 +2,4 @@ different_tests/references/build/*
 */build/*
 different_tests/functions/build/*
 different_tests/structures/build/*
+different_tests/enumerations/build/*
