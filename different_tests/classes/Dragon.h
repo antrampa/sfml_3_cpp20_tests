@@ -11,6 +11,7 @@ class Dragon
         Dragon(std::string name)
         Dragon(std::string name, int health, int power);
         ~Dragon();
+        void getName() const;
         void display() const;
         void Attack(Dragon& dragon);
         void Heal(int amount);
