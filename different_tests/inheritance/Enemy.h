@@ -3,7 +3,7 @@
 
 class Enemy 
 {
-    private:
+    protected:
         std::string name_;
         int lives_;
         int damage_;
@@ -14,7 +14,7 @@ class Enemy
         std::string GetName() const;
         void Display() const;
         void Attack(Enemy& target) const;
-}
+};
 
 
 #endif // _EXERCISE_H
