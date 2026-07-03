@@ -13,7 +13,7 @@ class Enemy
         ~Enemy();
         std::string GetName() const;
         void Display() const;
-        void Attack() const;
+        void Attack(Enemy& target) const;
 }
 
 
