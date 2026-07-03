@@ -13,20 +13,22 @@ Dragon::Dragon(std::string name, int health, int power) :
     name_(name), health_(health), power_(power)
 {}
 
-void Dragon::getName() const 
+Dragon::~Dragon(){}
+
+std::string Dragon::GetName() const 
 {
     return name_;
 }
 
-void Dragon::display() const 
+void Dragon::Display() const 
 {
-    cout << "Name: " << name_ << " Health: " << health_ << "Power: " << power_ << "\n";
+    std::cout << "Name: " << name_ << " Health: " << health_ << "Power: " << power_ << "\n";
 }
 
 void Dragon::Attack(Dragon& targetDragon) 
 {
     targetDragon.health_ -= power_;
-    cout << name_ << " attacks " << targetDragon.getName() << "!\n";
+    std::cout << name_ << " attacks " << targetDragon.GetName() << "!\n";
 }
 
 void Dragon::Heal(int amount)
@@ -41,5 +43,6 @@ void Dragon::Heal(int amount)
 
 void Dragon::Greet(const Dragon& dragon) const
 {
-    count << name_ << " greets " << dragon.getName() << "!\n";
+    std::cout << name_ << " greets " << dragon.GetName() << "!\n";
 }
+
