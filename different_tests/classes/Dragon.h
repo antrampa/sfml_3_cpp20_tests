@@ -8,12 +8,12 @@ class Dragon
         int power_;
         
     public:
-        Dragon(std::string name)
+        Dragon(std::string name);
         Dragon(std::string name, int health, int power);
         ~Dragon();
-        void getName() const;
-        void display() const;
+        void GetName() const;
+        void Display() const;
         void Attack(Dragon& dragon);
         void Heal(int amount);
         void Greet(const Dragon& dragon) const;
-}
+};
