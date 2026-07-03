@@ -28,5 +28,12 @@ void Enemy::Display() const
 
 void Enemy::Attack(Enemy& target) const
 {
+    target.GetHit();
     std::cout << name_ <<" attacks " << target.GetName() << "!\n";
 }
+
+void Enemy::GetHit()
+{
+    lives_ -= 1;
+}
+
