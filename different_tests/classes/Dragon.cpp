@@ -22,7 +22,7 @@ std::string Dragon::GetName() const
 
 void Dragon::Display() const 
 {
-    std::cout << "Name: " << name_ << " Health: " << health_ << "Power: " << power_ << "\n";
+    std::cout << "Name: " << name_ << " Health: " << health_ << " Power: " << power_ << "\n";
 }
 
 void Dragon::Attack(Dragon& targetDragon) 
@@ -34,10 +34,10 @@ void Dragon::Attack(Dragon& targetDragon)
 void Dragon::Heal(int amount)
 {
     health_ += amount;
-    if(health_ > 100) 
-    {
-        health_ = 100;
-    }
+    // if(health_ > 100) 
+    // {
+    //     health_ = 100;
+    // }
 }
 
 
