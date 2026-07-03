@@ -14,21 +14,10 @@ class Enemy
         std::string GetName() const;
         void Display() const;
         void Attack(Enemy& target) const;
+        void GetHit();
 };
 
 
 #endif // _EXERCISE_H
-
-
-
-
-
-
-
-
-
-
-
-
 
 
