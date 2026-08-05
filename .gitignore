@@ -4,3 +4,5 @@ different_tests/functions/build/*
 different_tests/structures/build/*
 different_tests/enumerations/build/*
 different_tests/Array/build/*
+*.exe
+SFML/test1/Build/*
